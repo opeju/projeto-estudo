@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img src="./assets/avatar.png" alt="Um cara estranho" />
+        <p>@umcaraestranho</p>
+      </div>
+
+    <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+    </div>
+
+      <!--<ul> serve para criação de listas desordenada (sem numeros) caso precise de uma lista ordenada (com numeros) usa-se a <ol> e li é um item da lista-->
+      <ul>
+        <li>
+          <a href="#" target="_blank">Inscreva-se no NLW</a>
+          <!--Quando quiser que link abra em outra aba devo colocar a tag target="_blank"-->
+        </li>
+
+        <li>
+          <a href="#">Baixe meu e-book</a>
+        </li>
+
+        <li>
+          <a href="#">Veja meu portfólio</a>
+        </li>
+
+        <li>
+          <a href="#">Conheça o Explorer</a>
+        </li>
+      </ul>
+      <div id="social">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+
+      <footer>Feito com ♥ pela <a href="#">Eloke Studio </a></footer>
+    </div>
+
+    <!--Icones sociais - Manter sempre acima do fechamento body-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
