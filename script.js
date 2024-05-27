@@ -7,10 +7,10 @@ function toggleMode() {
 
   if(html.classList.contains('light')) {
     img.setAttribute('src', './assets/avatar-light.png')
-    img.setAttribute('alt', "Um cara estranho de óculos escuro")
+    img.setAttribute('alt', "Logo Eloke no escuro")
   } else {
     img.setAttribute("src", "./assets/avatar.png")
-    img.setAttribute("alt", "Um cara estranho")
+    img.setAttribute("alt", "Logo Eloke")
   }
 
 //substituir a imagem. 
