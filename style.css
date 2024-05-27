@@ -95,11 +95,19 @@ body * {
   top: 50%;
 
   transform: translateY(-50%);
+
+  animation: slide-back 0.4s forwards;
 }
 
 .light #switch button {
-  left: 0;
-  right: initial;
+  animation: slide-in 0.4s forwards;
+}
+
+#switch button:hover {
+  /*Porq usar outline e não border? 
+  Outlines não ocupam espaço.
+  Outlines podem ser não retangulares.*/
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -186,5 +194,23 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+/*Animações*/
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
