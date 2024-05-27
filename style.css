@@ -5,25 +5,25 @@
 }
 
 :root {
-	--text-color: #fff;
-	--stroke-color: rgba(255, 255, 255, 0.5);
-	--surface-color: rgba(255, 255, 255, 0.1);
-	--surface-color-hover: rgba(255, 255, 255, 0.05);
-	--highlight-color: rgba(255, 255, 255, 0.2);
-	--toggle-handle-color: #fff;
+  --text-color: #fff;
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --toggle-handle-color: #fff;
   --bg-url: url(./assets/bg-mobile.jpg);
-  --switch-bg-url: url(./assets/MoonStars.svg)
+  --switch-bg-url: url(./assets/MoonStars.svg);
 }
 
 .light {
   --text-color: #000;
-	--stroke-color: rgba(0, 0, 0, 0.5);
+  --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --toggle-handle-color: #000;
   --bg-url: url(./assets/bg-mobile-light.jpg);
-  --switch-bg-url: url(./assets/Sun.svg)
+  --switch-bg-url: url(./assets/Sun.svg);
 }
 
 body {
@@ -40,11 +40,12 @@ body {
 
 body * {
   font-family: "Inter", sans-serif;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   height: 712px;
   padding: 0 24px;
   /* margin funionamento: 0px (top) 0px (left) 0px (botton) 0px (right)
@@ -85,7 +86,7 @@ body * {
   border: 0;
   border-radius: 50%;
 
-/*posição do botão*/
+  /*posição do botão*/
   position: absolute; /*Ele fez uma sobreposição de camada*/
   z-index: 1; /*Aqui é o andar da camada*/
   /*com as propriedades top/left/botton/right você consegue movimentar*/
@@ -166,13 +167,12 @@ ul li a:hover {
 }
 
 #social a:hover {
-background: var(--highlight-color);
-padding: 16px;
-
+  background: var(--highlight-color);
+  padding: 16px;
 }
 
 footer {
   text-align: center;
   padding: 24px 0;
-  font-size: 14px
+  font-size: 14px;
 }
